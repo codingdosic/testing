@@ -1,0 +1,12 @@
+name: testing2
+app: node@18
+options:
+  env:
+    - name: NODE_ENV
+      value: production
+  ports: 3000
+  start: node app.js
+context:
+  git:
+    url: https://github.com/codingdosic/testing.git
+    branch: main
